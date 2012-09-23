@@ -50,10 +50,10 @@ public class Ex_17 {
 	}
 
 	public static void main(String[] args) {
-		Cycle[]cycles={ new Unicycle(),new Bicycle(),new Tricycle()};
-		((Unicycle)cycles[0]).balance();
-		((Bicycle)cycles[1]).balance();
-		//!((Bicycle)cycles[2]).balance();//ERROR! cannot be cast!
+		Cycle[] cycles = { new Unicycle(), new Bicycle(), new Tricycle() };
+		((Unicycle) cycles[0]).balance();
+		((Bicycle) cycles[1]).balance();
+		// !((Bicycle)cycles[2]).balance();//ERROR! cannot be cast!
 
 	}
 
