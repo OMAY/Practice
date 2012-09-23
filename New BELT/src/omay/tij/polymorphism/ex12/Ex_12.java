@@ -46,6 +46,7 @@ class Hamster extends Rodent {
 }
 
 public class Ex_12 {
+	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 		Rodent[] rods = { new Mouse(), new Gerbil(), new Hamster() };
 
