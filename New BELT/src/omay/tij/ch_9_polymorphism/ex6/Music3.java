@@ -1,9 +1,9 @@
-package omay.tij.polymorphism.ex6;
+package omay.tij.ch_9_polymorphism.ex6;
 
 /*Change Music3.java so that what() becomes the root 
  Object method toString(). Try printing the Instrument objects using 
  System.out.println ()(without any casting). */
-import omay.tij.polymorphism.ex6.music.Note;
+import omay.tij.ch_9_polymorphism.ex6.music.Note;
 
 class Instrument {
 	void play(Note n) {

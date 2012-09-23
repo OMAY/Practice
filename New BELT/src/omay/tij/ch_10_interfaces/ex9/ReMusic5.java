@@ -1,6 +1,6 @@
-package omay.tij.interfaces.ex9;
+package omay.tij.ch_10_interfaces.ex9;
 
-import omay.tij.polymorphism.ex6.music.Note;
+import omay.tij.ch_9_polymorphism.ex6.music.Note;
 
 /*Refactor Music5.java by moving the common methods 
  in Wind, Percussion and Stringed into an abstract class.  */

@@ -1,4 +1,4 @@
-package omay.tij.polymorphism.ex4.shape;
+package omay.tij.ch_9_polymorphism.ex4.shape;
 
 public class Square extends Shape {
 	@Override

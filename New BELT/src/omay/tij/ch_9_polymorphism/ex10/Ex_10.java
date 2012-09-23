@@ -1,4 +1,4 @@
-package omay.tij.polymorphism.ex10;
+package omay.tij.ch_9_polymorphism.ex10;
 
 /*Create a base class with two methods. In the first 
  method, call the second method. Inherit a class and override the second 

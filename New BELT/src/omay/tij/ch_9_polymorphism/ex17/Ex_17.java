@@ -1,4 +1,4 @@
-package omay.tij.polymorphism.ex17;
+package omay.tij.ch_9_polymorphism.ex17;
 
 /*Using the Cycle hierarchy from Exercise 1,add a 
  balance() method to Unicycle and Bicycle, but not to Tricycle. Create 

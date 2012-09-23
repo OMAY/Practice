@@ -1,4 +1,4 @@
-package omay.tij.polymorphism.ex13;
+package omay.tij.ch_9_polymorphism.ex13;
 
 /*Add a finalize() method to ReferenceCounting.java to verify 
  * the termination condition (see the Initialization & Cleanup chapter). */

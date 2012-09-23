@@ -1,6 +1,6 @@
-package omay.tij.polymorphism.ex8;
+package omay.tij.ch_9_polymorphism.ex8;
 
-import omay.tij.polymorphism.ex6.music.Note;
+import omay.tij.ch_9_polymorphism.ex6.music.Note;
 
 /*Add a new type of Instrument to Music3.java and
  * verify that polymorphism works for your new type. */

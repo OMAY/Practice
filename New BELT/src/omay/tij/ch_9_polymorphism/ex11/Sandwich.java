@@ -1,4 +1,4 @@
-package omay.tij.polymorphism.ex11;
+package omay.tij.ch_9_polymorphism.ex11;
 
 //Add class Pickle to Sandwich.java.
 class Meal {

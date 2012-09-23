@@ -1,4 +1,4 @@
-package omay.tij.polymorphism.ex14;
+package omay.tij.ch_9_polymorphism.ex14;
 
 /*Modify Exercise 12 so that one of the member objects is 
  a shared object with reference counting, and demonstrate that it works 

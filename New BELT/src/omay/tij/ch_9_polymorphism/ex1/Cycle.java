@@ -1,4 +1,4 @@
-package omay.tij.polymorphism.ex1;
+package omay.tij.ch_9_polymorphism.ex1;
 
 class Cycle {
 	public void move(Cycle c) {

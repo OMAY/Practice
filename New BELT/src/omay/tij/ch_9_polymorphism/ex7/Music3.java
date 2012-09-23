@@ -1,8 +1,8 @@
-package omay.tij.polymorphism.ex7;
+package omay.tij.ch_9_polymorphism.ex7;
 
 /*Add a new type of Instrument to Music3.java and
  * verify that polymorphism works for your new type. */
-import omay.tij.polymorphism.ex6.music.Note;
+import omay.tij.ch_9_polymorphism.ex6.music.Note;
 
 class Instrument {
 	void play(Note n) {

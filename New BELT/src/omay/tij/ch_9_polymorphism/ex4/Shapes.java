@@ -1,9 +1,9 @@
-package omay.tij.polymorphism.ex4;
+package omay.tij.ch_9_polymorphism.ex4;
 
 /*Add a new type of Shape to Shapes.java and verify in main() that 
  * polymorphism works for your new type as it does in the old types. */
-import omay.tij.polymorphism.ex4.shape.RandomShapeGenerator;
-import omay.tij.polymorphism.ex4.shape.Shape;
+import omay.tij.ch_9_polymorphism.ex4.shape.RandomShapeGenerator;
+import omay.tij.ch_9_polymorphism.ex4.shape.Shape;
 
 public class Shapes {
 	private static RandomShapeGenerator gen = new RandomShapeGenerator();

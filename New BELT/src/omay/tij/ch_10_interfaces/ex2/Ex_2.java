@@ -1,4 +1,4 @@
-package omay.tij.interfaces.ex2;
+package omay.tij.ch_10_interfaces.ex2;
 
 /*Create a class as abstract without including any abstract 
  methods, and verify that you cannot create any instances of that class.

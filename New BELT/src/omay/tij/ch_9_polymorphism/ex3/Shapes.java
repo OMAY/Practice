@@ -1,11 +1,11 @@
-package omay.tij.polymorphism.ex3;
+package omay.tij.ch_9_polymorphism.ex3;
 
 /*Add a new method in the base class of Shapes.java that 
  prints a message, but don't override it in the derived classes. Explain what 
  happens. Now override it in one of the derived classes but not the others, and 
  see what happens. Finally, override it in all the derived classes. */
-import omay.tij.polymorphism.ex3.shape.RandomShapeGenerator;
-import omay.tij.polymorphism.ex3.shape.Shape;
+import omay.tij.ch_9_polymorphism.ex3.shape.RandomShapeGenerator;
+import omay.tij.ch_9_polymorphism.ex3.shape.Shape;
 
 public class Shapes {
 	private static RandomShapeGenerator gen = new RandomShapeGenerator();

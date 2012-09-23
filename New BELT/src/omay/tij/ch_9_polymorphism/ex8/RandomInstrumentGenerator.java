@@ -1,4 +1,4 @@
-package omay.tij.polymorphism.ex8;
+package omay.tij.ch_9_polymorphism.ex8;
 
 import java.util.Random;
 

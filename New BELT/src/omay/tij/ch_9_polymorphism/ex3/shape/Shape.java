@@ -1,4 +1,4 @@
-package omay.tij.polymorphism.ex3.shape;
+package omay.tij.ch_9_polymorphism.ex3.shape;
 
 public class Shape {
 	public void draw() {

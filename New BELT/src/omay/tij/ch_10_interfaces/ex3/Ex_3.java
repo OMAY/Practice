@@ -1,4 +1,4 @@
-package omay.tij.interfaces.ex3;
+package omay.tij.ch_10_interfaces.ex3;
 
 /*Create a base class with an abstract print() method that 
  is overridden in a derived class. The overridden version of the method prints 

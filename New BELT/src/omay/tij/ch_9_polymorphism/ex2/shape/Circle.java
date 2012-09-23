@@ -1,4 +1,4 @@
-package omay.tij.polymorphism.ex2.shape;
+package omay.tij.ch_9_polymorphism.ex2.shape;
 
 public class Circle extends Shape {
 	@Override

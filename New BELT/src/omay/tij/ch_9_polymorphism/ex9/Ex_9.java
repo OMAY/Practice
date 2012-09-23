@@ -1,4 +1,4 @@
-package omay.tij.polymorphism.ex9;
+package omay.tij.ch_9_polymorphism.ex9;
 
 /*Create an inheritance hierarchy of Rodent:Mouse, Gerbil, Hamster, etc.
  In the base class, provide methods that are common to all Rodents,

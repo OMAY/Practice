@@ -1,4 +1,4 @@
-package omay.tij.interfaces.ex1;
+package omay.tij.ch_10_interfaces.ex1;
 
 /*Modify Exercise 9 in the previous chapter so that Rodent 
  is an abstract class. Make the methods of Rodent abstract whenever 

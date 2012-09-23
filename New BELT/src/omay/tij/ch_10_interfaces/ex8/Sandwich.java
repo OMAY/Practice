@@ -1,4 +1,4 @@
-package omay.tij.interfaces.ex8;
+package omay.tij.ch_10_interfaces.ex8;
 
 
 /*In polymorphism.Sandwich.java, create an interface 

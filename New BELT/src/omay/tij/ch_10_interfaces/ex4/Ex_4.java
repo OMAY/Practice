@@ -1,4 +1,4 @@
-package omay.tij.interfaces.ex4;
+package omay.tij.ch_10_interfaces.ex4;
 
 /*Create an abstract class with no methods. Derive a class 
  and add a method. Create a static method that takes a reference to the base 

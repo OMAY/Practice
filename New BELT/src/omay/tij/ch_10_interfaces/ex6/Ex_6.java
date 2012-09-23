@@ -1,6 +1,6 @@
-package omay.tij.interfaces.ex6;
+package omay.tij.ch_10_interfaces.ex6;
 
-import omay.tij.interfaces.ex5.pack.ThreeMethods;
+import omay.tij.ch_10_interfaces.ex5.pack.ThreeMethods;
 
 /*Prove that all the methods in an interface are 
  automatically public. 

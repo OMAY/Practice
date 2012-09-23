@@ -1,4 +1,4 @@
-package omay.tij.polymorphism.ex5;
+package omay.tij.ch_9_polymorphism.ex5;
 
 /*Starting from Exercise1, add a wheels() method in 
  Cycle, which returns the number of wheels. Modify ride() to call wheels() 

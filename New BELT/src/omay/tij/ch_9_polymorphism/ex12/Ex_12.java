@@ -1,4 +1,4 @@
-package omay.tij.polymorphism.ex12;
+package omay.tij.ch_9_polymorphism.ex12;
 
 /*Modify Exercise 9 so that it demonstrates the order of 
  initialization of the base classes and derived classes. Now add member 

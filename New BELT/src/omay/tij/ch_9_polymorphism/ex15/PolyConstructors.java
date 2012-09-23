@@ -1,4 +1,4 @@
-package omay.tij.polymorphism.ex15;
+package omay.tij.ch_9_polymorphism.ex15;
 
 /*Add a RectangularGlyph to PolyConstructors.java 
  and demonstrate the problem described in this section. */

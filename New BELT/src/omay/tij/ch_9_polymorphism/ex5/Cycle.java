@@ -1,4 +1,4 @@
-package omay.tij.polymorphism.ex5;
+package omay.tij.ch_9_polymorphism.ex5;
 
 class Cycle {
 
