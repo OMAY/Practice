@@ -7,6 +7,7 @@ public class RandomShapeGenerator {
 
 	public Shape next() {
 		switch (rand.nextInt(3)) {
+		//TODO: default должен быть в конце перечисления вариантов, вместо default скозным можно сделать case 2:
 		default:
 		case 0:
 			return new Circle();

@@ -8,6 +8,8 @@ package omay.tij.ch_9_polymorphism.ex9;
  base-class methods to see what happens. 
  * 
  */
+
+//TODO: следует добавить аннотации @Override в нужных местах
 class Rodent {
 	public void introduce() {
 		System.out.println("This is a Rodent");

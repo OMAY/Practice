@@ -7,6 +7,7 @@ public class RandomInstrumentGenerator {
 
 	public Instrument next() {
 		switch (rand.nextInt(6)) {
+		//TODO: то же замечание насчёт default
 		default:
 		case 0:
 			return new Wind();

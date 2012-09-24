@@ -6,7 +6,8 @@ public class Shape {
 
 	public void erase() {
 	}
-	public void print(){
+
+	public void print() {
 		System.out.println("This is a new Shape");
 	}
 }
