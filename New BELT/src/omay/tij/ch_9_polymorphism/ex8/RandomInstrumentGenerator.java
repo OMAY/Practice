@@ -7,8 +7,7 @@ public class RandomInstrumentGenerator {
 
 	public Instrument next() {
 		switch (rand.nextInt(6)) {
-		//TODO: то же замечание насчёт default
-		default:
+
 		case 0:
 			return new Wind();
 		case 1:
@@ -20,6 +19,7 @@ public class RandomInstrumentGenerator {
 		case 4:
 			return new Woodwind();
 		case 5:
+		default:
 			return new Guitar();
 		}
 	}

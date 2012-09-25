@@ -9,7 +9,6 @@ package omay.tij.ch_9_polymorphism.ex9;
  * 
  */
 
-//TODO: следует добавить аннотации @Override в нужных местах
 class Rodent {
 	public void introduce() {
 		System.out.println("This is a Rodent");
@@ -17,18 +16,21 @@ class Rodent {
 }
 
 class Mouse extends Rodent {
+	@Override
 	public void introduce() {
 		System.out.println("This is a Mouse");
 	}
 }
 
 class Gerbil extends Rodent {
+	@Override
 	public void introduce() {
 		System.out.println("This is a Gerbill");
 	}
 }
 
 class Hamster extends Rodent {
+	@Override
 	public void introduce() {
 		System.out.println("This is a Hamster");
 	}
