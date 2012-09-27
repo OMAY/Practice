@@ -22,6 +22,7 @@ public abstract class StringProcessor implements Processor {
         Apply.process(new Upcase(), s);
         Apply.process(new Downcase(), s);
         Apply.process(new Splitter(), s);
+        Apply.process(new Swapper(), s);
     }
 }
 
@@ -40,5 +41,10 @@ class Downcase extends StringProcessor {
 class Splitter extends StringProcessor {
     public String process(Object input) {
         return Arrays.toString(((String) input).split(""));
+    }
+}
+class Swapper extends StringProcessor{
+    public String process(Object input){
+        return Swap.swap((String) input);
     }
 }
