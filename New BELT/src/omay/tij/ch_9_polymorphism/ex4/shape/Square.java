@@ -1,6 +1,7 @@
 package omay.tij.ch_9_polymorphism.ex4.shape;
 
 //TODO: override print() method
+//TODO: done
 
 public class Square extends Shape {
 	@Override
