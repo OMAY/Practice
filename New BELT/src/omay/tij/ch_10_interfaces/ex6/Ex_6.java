@@ -2,8 +2,8 @@ package omay.tij.ch_10_interfaces.ex6;
 
 import omay.tij.ch_10_interfaces.ex5.pack.ThreeMethods;
 
-/*Prove that all the methods in an interface are 
- automatically public. 
+/*Prove that all the methods in an interface are
+ automatically public.
  */
 public class Ex_6 implements ThreeMethods {
 	public void firstMethod() {
@@ -25,5 +25,7 @@ public class Ex_6 implements ThreeMethods {
 	}
 
 }
-/*to prove the task - delete one of "public" modifiers of three methods that
- implemented*/
+/*
+ * to prove the task - delete one of "public" modifiers of three methods that
+ * implemented
+ */

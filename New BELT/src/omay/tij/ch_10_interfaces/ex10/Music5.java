@@ -1,15 +1,16 @@
 package omay.tij.ch_10_interfaces.ex10;
-/*Modify Music5.java by adding a Playable interface. 
-Move the play() declaration from Instrument to Playable. Add Playable 
-to the derived classes by including it in the implements list.
-Change tune()so that it takes a Playable instead of an Instrument . */
+
+/*Modify Music5.java by adding a Playable interface.
+ Move the play() declaration from Instrument to Playable. Add Playable
+ to the derived classes by including it in the implements list.
+ Change tune()so that it takes a Playable instead of an Instrument . */
 import omay.tij.ch_9_polymorphism.ex6.music.Note;
-interface Playable{
+
+interface Playable {
 	void play(Note n);
 }
-interface Instrument {
 
-	
+interface Instrument {
 
 	void adjust();
 }
@@ -81,8 +82,8 @@ public class Music5 {
 
 	public static void main(String[] args) {
 
-		Playable[] orchestra = { new Wind(), new Percussion(),
-				new Stringed(), new Brass(), new Woodwind() };
+		Playable[] orchestra = { new Wind(), new Percussion(), new Stringed(),
+				new Brass(), new Woodwind() };
 		tuneAll(orchestra);
 	}
 }

@@ -1,5 +1,6 @@
 package omay.tij.ch_9_polymorphism.ex2;
 
+/*Add the @Override annotation to the shapes example.*/
 import omay.tij.ch_9_polymorphism.ex2.shape.RandomShapeGenerator;
 import omay.tij.ch_9_polymorphism.ex2.shape.Shape;
 

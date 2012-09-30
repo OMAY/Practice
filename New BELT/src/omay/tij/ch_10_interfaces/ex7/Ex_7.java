@@ -1,7 +1,7 @@
 package omay.tij.ch_10_interfaces.ex7;
 
-/*Change Exercise 9 in the Polymorphism chapter so that 
-Rodent is an interface. */
+/*Change Exercise 9 in the Polymorphism chapter so that
+ Rodent is an interface. */
 
 interface Rodent {
 	public void introduce();

@@ -1,7 +1,7 @@
 package omay.tij.ch_10_interfaces.ex1;
 
-/*Modify Exercise 9 in the previous chapter so that Rodent 
- is an abstract class. Make the methods of Rodent abstract whenever 
+/*Modify Exercise 9 in the previous chapter so that Rodent
+ is an abstract class. Make the methods of Rodent abstract whenever
  possible. */
 abstract class Rodent {
 	public abstract void introduce();
@@ -15,7 +15,7 @@ class Mouse extends Rodent {
 
 class Gerbil extends Rodent {
 	public void introduce() {
-		System.out.println("This is a Gerbil");
+		System.out.println("This is a Gerbill");
 	}
 }
 

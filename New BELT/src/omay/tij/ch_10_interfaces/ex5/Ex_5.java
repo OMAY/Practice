@@ -2,7 +2,7 @@ package omay.tij.ch_10_interfaces.ex5;
 
 import omay.tij.ch_10_interfaces.ex5.pack.ThreeMethods;
 
-/*Create an interface containing three methods, in its own 
+/*Create an interface containing three methods, in its own
  package. Implement the interface in a different package. */
 public class Ex_5 implements ThreeMethods {
 
