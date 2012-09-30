@@ -3,6 +3,7 @@ package omay.tij.ch_9_polymorphism.ex5;
 /*Starting from Exercise1, add a wheels() method in 
  Cycle, which returns the number of wheels. Modify ride() to call wheels() 
  and verify that polymorphism works.*/
+
 public class Ex_5 {
 	public static void ride(Cycle c) {
 		c.move(c);

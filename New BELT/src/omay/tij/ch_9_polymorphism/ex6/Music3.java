@@ -4,10 +4,7 @@ package omay.tij.ch_9_polymorphism.ex6;
  Object method toString(). Try printing the Instrument objects using 
  System.out.println ()(without any casting). */
 
-//TODO: rename String what() to public String toString()
-//TODO: done
 //TODO: use proper access modifiers
-//TODO: done
 
 import omay.tij.ch_9_polymorphism.ex6.music.Note;
 

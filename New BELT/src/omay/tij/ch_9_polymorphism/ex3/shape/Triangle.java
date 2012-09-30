@@ -1,8 +1,5 @@
 package omay.tij.ch_9_polymorphism.ex3.shape;
 
-//TODO: override print() method
-//TODO: done
-
 public class Triangle extends Shape {
 	@Override
 	public void draw() {

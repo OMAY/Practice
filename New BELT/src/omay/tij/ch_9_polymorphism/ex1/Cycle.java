@@ -1,8 +1,5 @@
 package omay.tij.ch_9_polymorphism.ex1;
 
-//TODO: remove move() methods
-//TODO: done
-
 class Cycle {
 
 }

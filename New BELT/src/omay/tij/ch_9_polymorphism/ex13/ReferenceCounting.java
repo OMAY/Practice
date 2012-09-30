@@ -4,7 +4,7 @@ package omay.tij.ch_9_polymorphism.ex13;
  * the termination condition (see the Initialization & Cleanup chapter). */
 
  class Shared {
-	private int refcount = 0;
+	private int refCount = 0;
 	private static long counter = 0;
 	private final long id = counter++;
 
@@ -13,17 +13,17 @@ package omay.tij.ch_9_polymorphism.ex13;
 	}
 
 	public void addRef() {
-		refcount++;
+		refCount++;
 	}
 
 	void dispose() {
-		if (--refcount == 0)
+		if (--refCount == 0)
 			System.out.println("Disposing " + this);
 	}
 
     @Override
 	protected void finalize() {
-		if (refcount > 0) {
+		if (refCount > 0) {
 			System.out.println("ERROR! Object is using!");
 		} else {
 			System.out.println("finalize successfull");

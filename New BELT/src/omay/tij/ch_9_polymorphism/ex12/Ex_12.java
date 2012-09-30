@@ -6,59 +6,52 @@ package omay.tij.ch_9_polymorphism.ex12;
  their initialization occurs during construction.
  */
 
-//TODO: use @Override annotation
-//TODO: done
-//TODO: remove introduce method
-//TODO: done
 class Rodent {
-	Rodent() {
+    Rodent() {
 
-	}
+    }
 
-	public void introduce(String s) {
-		System.out.println("New " + s);
-	}
+    public void introduce(String s) {
+        System.out.println("New " + s);
+    }
 }
 
 class Mouse extends Rodent {
-	Mouse() {
+    Mouse() {
 
-	}
+    }
+
     @Override
     public void introduce(String s) {
-		System.out.println("New " + s);
-	}
+        System.out.println("New " + s);
+    }
 }
 
 class Gerbil extends Rodent {
-	Gerbil() {
+    Gerbil() {
 
-	}
+    }
 
     @Override
-	public void introduce(String s) {
-		System.out.println("New " + s);
-	}
+    public void introduce(String s) {
+        System.out.println("New " + s);
+    }
 }
 
 class Hamster extends Rodent {
-	Hamster() {
+    Hamster() {
 
-	}
+    }
 
     @Override
-	public void introduce(String s) {
-		System.out.println("New " + s);
-	}
+    public void introduce(String s) {
+        System.out.println("New " + s);
+    }
 }
 
 public class Ex_12 {
-    //TODO: remove @SuppressWarnings annotation
-    //TODO: done
+    public static void main(String[] args) {
+        Rodent[] rods = {new Mouse(), new Gerbil(), new Hamster()};
 
-	public static void main(String[] args) {
-		Rodent[] rods = { new Mouse(), new Gerbil(), new Hamster() };
-
-	}
-
+    }
 }

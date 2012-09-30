@@ -1,8 +1,5 @@
 package omay.tij.ch_9_polymorphism.ex4.shape;
 
-//TODO: override print() method
-//TODO: done
-
 public class Rectangle extends Shape {
 	@Override
 	public void draw() {

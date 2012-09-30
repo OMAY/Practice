@@ -4,10 +4,7 @@ package omay.tij.ch_9_polymorphism.ex7;
  * verify that polymorphism works for your new type. */
 import omay.tij.ch_9_polymorphism.ex6.music.Note;
 
-//TODO: remove what() methods, use toString() methods
-//TODO: done
 //TODO: use proper access modifiers
-//TODO: done
 
 class Instrument {
 	void play(Note n) {
@@ -124,6 +121,7 @@ public class Music3 {
 		i.play(Note.MIDDLE_C);
 	}
 
+    //TODO: use this method ( tuneAll(orchestra); )in main() instead of foreach construction
 	public static void tuneAll(Instrument[] e) {
 		for (Instrument i : e)
 			tune(i);

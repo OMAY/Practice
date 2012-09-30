@@ -43,9 +43,6 @@ class PortableLunch extends Lunch {
 	}
 }
 
-//TODO: remove SuppressWarnings annotation
-//TODO: done
-
 public class Sandwich extends PortableLunch {
 	private Bread b = new Bread();
 	private Cheese c = new Cheese();

@@ -4,14 +4,13 @@ package omay.tij.ch_9_polymorphism.ex17;
  balance() method to Unicycle and Bicycle, but not to Tricycle. Create 
  instances of all three types and upcast them to an array of Cycle. Try to call 
  balance() on each element of the array and observe the results. Downcast 
- and call balance() and observe what happens. 
- * 
+ and call balance() and observe what happens.
  */
+
 class Cycle {
 	public void move(Cycle c) {
 		System.out.println("The Cycle is moving");
 	}
-
 }
 
 class Unicycle extends Cycle {
@@ -23,7 +22,6 @@ class Unicycle extends Cycle {
 	public void balance() {
 		System.out.println("Keep the balance");
 	}
-
 }
 
 class Bicycle extends Cycle {
@@ -54,7 +52,5 @@ public class Ex_17 {
 		((Unicycle) cycles[0]).balance();
 		((Bicycle) cycles[1]).balance();
 		// !((Bicycle)cycles[2]).balance();//ERROR! cannot be cast!
-
 	}
-
 }

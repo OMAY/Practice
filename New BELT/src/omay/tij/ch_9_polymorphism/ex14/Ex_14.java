@@ -3,12 +3,10 @@ package omay.tij.ch_9_polymorphism.ex14;
 /*Modify Exercise 12 so that one of the member objects is 
  a shared object with reference counting, and demonstrate that it works 
  properly.  */
+
 class Shared {
-    //TODO: use camelCase for fields'/methods' names
-    //Todo: done
-    //TODO: use reference counting, disposing, etc.
-    //TODO: done
-    private int refcount = 0;
+    //TODO: needs to be redone according to the task
+    private int refCount = 0;
     private static long counter = 0;
     private final long id = counter++;
     Shared() {
@@ -16,7 +14,7 @@ class Shared {
     }
 
 	public void addRef() {
-		refcount++;
+		refCount++;
 	}
     @Override
     public String toString() {
