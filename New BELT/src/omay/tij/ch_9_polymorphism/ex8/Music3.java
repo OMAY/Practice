@@ -5,6 +5,15 @@ import omay.tij.ch_9_polymorphism.ex6.music.Note;
 /*Add a new type of Instrument to Music3.java and
  * verify that polymorphism works for your new type. */
 
+//TODO: edit task:
+/*
+Modify Music3.java so it randomly creates
+Instrument objects the way Shapes.java does.
+*/
+//TODO: use override annotation
+//TODO: remove what() method, use overridden toString() method
+
+
 class Instrument {
 	void play(Note n) {
 		System.out.println("Instrument.play( )" + n);

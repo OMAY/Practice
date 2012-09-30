@@ -3,6 +3,9 @@ package omay.tij.ch_9_polymorphism.ex16;
 /*Following the example in Transmogrify.Java, create a 
  Starship class containing an AlertStatus reference that can indicate three 
  different states. Include methods to change the states.  */
+
+//TODO: use @Override annotation
+
 class AlertStatus {
 	public String alert() {
 		return "Alert";

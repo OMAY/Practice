@@ -4,6 +4,9 @@ package omay.tij.ch_9_polymorphism.ex1;
 /*Create a Cycle class, with subclasses Unicycle, Bicycle 
  and Tricycle. Demonstrate that an instance of each type can be upcast to 
  Cycle via a ride() method.*/
+
+//TODO: remove move() method call from ride()
+
 public class Ex_1 {
 	public static void ride(Cycle c){
 		c.move(c);

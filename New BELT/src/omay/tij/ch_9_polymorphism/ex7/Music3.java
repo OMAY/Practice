@@ -4,6 +4,9 @@ package omay.tij.ch_9_polymorphism.ex7;
  * verify that polymorphism works for your new type. */
 import omay.tij.ch_9_polymorphism.ex6.music.Note;
 
+//TODO: remove what() methods, use toString() methods
+//TODO: use proper access modifiers
+
 class Instrument {
 	void play(Note n) {
 		System.out.println("Instrument.play( )" + n);

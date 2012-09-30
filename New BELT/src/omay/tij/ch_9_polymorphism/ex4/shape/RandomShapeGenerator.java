@@ -2,6 +2,8 @@ package omay.tij.ch_9_polymorphism.ex4.shape;
 
 import java.util.Random;
 
+//TODO: place default option in the end of switch construction
+
 public class RandomShapeGenerator {
 	private Random rand = new Random();
 

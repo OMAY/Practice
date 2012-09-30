@@ -3,6 +3,10 @@ package omay.tij.ch_9_polymorphism.ex6;
 /*Change Music3.java so that what() becomes the root 
  Object method toString(). Try printing the Instrument objects using 
  System.out.println ()(without any casting). */
+
+//TODO: rename String what() to public String toString()
+//TODO: use proper access modifiers
+
 import omay.tij.ch_9_polymorphism.ex6.music.Note;
 
 class Instrument {

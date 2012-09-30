@@ -1,5 +1,7 @@
 package omay.tij.ch_9_polymorphism.ex1;
 
+//TODO: remove move() methods
+
 class Cycle {
 	public void move(Cycle c) {
 		System.out.println("The Cycle is moving");

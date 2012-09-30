@@ -1,5 +1,7 @@
 package omay.tij.ch_9_polymorphism.ex3.shape;
 
+//TODO: override print() method
+
 public class Circle extends Shape {
 	@Override
 	public void draw() {

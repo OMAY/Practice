@@ -5,6 +5,11 @@ package omay.tij.ch_9_polymorphism.ex12;
  * objects to both the base and derived classes, and show the order in which 
  their initialization occurs during construction.
  */
+
+//TODO: use @Override annotation
+//TODO: remove introduce method
+//К туду выше: использование public методов в конструкторе это очень плохая идея, это чревато проблемами из-за
+// наследования
 class Rodent {
 	public Rodent() {
 		introduce("Rodent");
@@ -46,6 +51,7 @@ class Hamster extends Rodent {
 }
 
 public class Ex_12 {
+    //TODO: remove @SuppressWarnings annotation
 	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 		Rodent[] rods = { new Mouse(), new Gerbil(), new Hamster() };

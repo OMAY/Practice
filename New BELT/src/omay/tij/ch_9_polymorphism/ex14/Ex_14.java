@@ -4,6 +4,8 @@ package omay.tij.ch_9_polymorphism.ex14;
  a shared object with reference counting, and demonstrate that it works 
  properly.  */
 class Shared {
+    //TODO: use camelCase for fields'/methods' names
+    //TODO: use reference counting, disposing, etc.
 	private long refcount;
 
 	public void addRef() {
