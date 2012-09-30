@@ -41,7 +41,7 @@ class Composing {
 	private static long counter = 0;
 	private final long id = counter++;
 
-	public Composing(Shared shared) {
+	Composing(Shared shared) {
 		System.out.println("Creating " + this);
 		this.shared = shared;
 		this.shared.addRef();

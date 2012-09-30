@@ -7,27 +7,42 @@ class Shared {
     //TODO: use camelCase for fields'/methods' names
     //Todo: done
     //TODO: use reference counting, disposing, etc.
-	private long refcount;
+    //TODO: done
+    private int refcount = 0;
+    private static long counter = 0;
+    private final long id = counter++;
+    Shared() {
+        System.out.println("Creating " + this);
+    }
 
 	public void addRef() {
 		refcount++;
-		System.out.println(refcount);
 	}
+    @Override
+    public String toString() {
+        return "Shared " + id;
+    }
 
 }
 
 class Rodent {
+    private static long counter = 0;
+    private final long id = counter++;
 
     Rodent(Shared sh) {
-		System.out.print("New Rodent ");
-        Shared s = sh;
-		s.addRef();
+		System.out.println("Creating " + this);
+        Shared shared = sh;
+		shared.addRef();
 	}
+    @Override
+    public String toString() {
+        return "Rodent " + id;
+    }
 
 }
 
 class Mouse extends Rodent {
-	public Mouse(Shared sh) {
+	Mouse(Shared sh) {
 		super(sh);
 		System.out.println("New Mouse ");
 	}
@@ -35,7 +50,7 @@ class Mouse extends Rodent {
 }
 
 class Gerbil extends Rodent {
-	public Gerbil(Shared sh) {
+	Gerbil(Shared sh) {
 		super(sh);
 		System.out.println("New Gerbil ");
 	}
@@ -43,7 +58,7 @@ class Gerbil extends Rodent {
 }
 
 class Hamster extends Rodent {
-	public Hamster(Shared sh) {
+	Hamster(Shared sh) {
 		super(sh);
 		System.out.println("New Hamster ");
 	}
