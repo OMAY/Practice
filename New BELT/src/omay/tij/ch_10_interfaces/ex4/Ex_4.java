@@ -6,11 +6,10 @@ package omay.tij.ch_10_interfaces.ex4;
  1) In main(), demonstrate that it works.
  2) Now put the abstract declaration for the method
  in the base class, thus eliminating the need for the downcast.
- *
  */
-abstract class AClass {
-	// public abstract void print();
 
+abstract class AClass {
+	 //public abstract void print();
 }
 
 class BClass extends AClass {
@@ -26,9 +25,8 @@ public class Ex_4 {
 
 	public static void main(String[] args) {
 		AClass a = new BClass();
-		// a.print();
+		//a.print();
 		dCast(a);
-
 	}
 
 }

@@ -1,11 +1,10 @@
 package omay.tij.ch_10_interfaces.ex11;
+
 /*Create a class with a method that takes a String
 argument and produces a result that swaps each pair of characters in that
 argument. Adapt the class so that it works with
 interfaceprocessor.Apply.process() .
-
- */
-
+*/
 
 import java.util.Arrays;
 
@@ -43,8 +42,9 @@ class Splitter extends StringProcessor {
         return Arrays.toString(((String) input).split(""));
     }
 }
-class Swapper extends StringProcessor{
-    public String process(Object input){
+
+class Swapper extends StringProcessor {
+    public String process(Object input) {
         return Swap.swap((String) input);
     }
 }

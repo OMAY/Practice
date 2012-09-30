@@ -4,12 +4,12 @@ import omay.tij.ch_10_interfaces.ex5.pack.ThreeMethods;
 
 /*Create an interface containing three methods, in its own
  package. Implement the interface in a different package. */
+
 public class Ex_5 implements ThreeMethods {
 
 	@Override
 	public void firstMethod() {
 		System.out.println(1);
-
 	}
 
 	@Override
@@ -20,7 +20,6 @@ public class Ex_5 implements ThreeMethods {
 	@Override
 	public void thirdMethod() {
 		System.out.println(3);
-
 	}
 
 	public static void main(String[] args) {
@@ -28,7 +27,5 @@ public class Ex_5 implements ThreeMethods {
 		e.firstMethod();
 		e.secondMethod();
 		e.thirdMethod();
-
 	}
-
 }

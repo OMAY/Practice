@@ -4,11 +4,11 @@ import java.util.Random;
 
 /*Create a class that produces a sequence of chars. Adapt 
  this class so that it can be an input to a Scanner object. */
+
 public class RandomChars {
 	private static Random rand = new Random(65);
 
 	public char next() {
-
 		return (char) rand.nextInt(90);
 	}
 

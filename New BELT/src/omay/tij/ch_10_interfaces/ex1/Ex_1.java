@@ -15,7 +15,7 @@ class Mouse extends Rodent {
 
 class Gerbil extends Rodent {
 	public void introduce() {
-		System.out.println("This is a Gerbill");
+		System.out.println("This is a Gerbil");
 	}
 }
 
@@ -31,7 +31,6 @@ public class Ex_1 {
 		for (Rodent r : rods) {
 			r.introduce();
 		}
-
 	}
 
 }

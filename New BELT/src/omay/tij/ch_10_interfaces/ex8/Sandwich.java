@@ -3,6 +3,9 @@ package omay.tij.ch_10_interfaces.ex8;
 /*In polymorphism.Sandwich.java, create an interface
  called FastFood (with appropriate methods)and change Sandwich so that
  it also implements FastFood. */
+
+//TODO: use access modifiers
+
 class Bread {
 	Bread() {
 		System.out.println("Bread()");
@@ -29,7 +32,6 @@ class Pickle {
 
 interface FastFood {
 	void newOne();
-
 }
 
 public class Sandwich implements FastFood {
@@ -38,7 +40,6 @@ public class Sandwich implements FastFood {
 		new Cheese();
 		new Lettuce();
 		new Pickle();
-
 	}
 
 	public Sandwich() {

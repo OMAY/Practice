@@ -2,6 +2,7 @@ package omay.tij.ch_10_interfaces.ex16;
 
 import java.nio.CharBuffer;
 import java.util.Scanner;
+
 public class AdaptedRandomChars extends RandomChars implements Readable {
 	private int count;
 
