@@ -5,7 +5,9 @@ package omay.tij.ch_9_polymorphism.ex6;
  System.out.println ()(without any casting). */
 
 //TODO: rename String what() to public String toString()
+//TODO: done
 //TODO: use proper access modifiers
+//TODO: done
 
 import omay.tij.ch_9_polymorphism.ex6.music.Note;
 
@@ -14,19 +16,14 @@ class Instrument {
 		System.out.println("Instrument.play( )" + n);
 	}
 
-	String what() {
-		return "Instrument";
-	}
-
 	void adjust() {
 		System.out.println("Adjusting Instrument");
 	}
 
-	@Override
-	public String toString() {
-		String s = what();
-		return s;
-	}
+    @Override
+    public String toString() {
+        return "Instrument";
+    }
 }
 
 class Wind extends Instrument {
@@ -36,7 +33,7 @@ class Wind extends Instrument {
 	}
 
 	@Override
-	String what() {
+    public String toString() {
 		return "Wind";
 	}
 
@@ -53,7 +50,7 @@ class Percussion extends Instrument {
 	}
 
 	@Override
-	String what() {
+    public String toString() {
 		return "Percussion";
 	}
 
@@ -70,7 +67,7 @@ class Stringed extends Instrument {
 	}
 
 	@Override
-	String what() {
+    public String toString() {
 		return "Stringed";
 	}
 
@@ -99,15 +96,14 @@ class Woodwind extends Wind {
 	}
 
 	@Override
-	String what() {
+    public String toString() {
 		return "Woodwind";
 	}
 }
 
 public class Music3 {
 
-	public static void tune(Instrument i) {
-		// ...
+	private static void tune(Instrument i) {
 		i.play(Note.MIDDLE_C);
 	}
 

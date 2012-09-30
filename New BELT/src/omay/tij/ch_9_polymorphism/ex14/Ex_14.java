@@ -5,6 +5,7 @@ package omay.tij.ch_9_polymorphism.ex14;
  properly.  */
 class Shared {
     //TODO: use camelCase for fields'/methods' names
+    //Todo: done
     //TODO: use reference counting, disposing, etc.
 	private long refcount;
 
@@ -16,11 +17,10 @@ class Shared {
 }
 
 class Rodent {
-	private Shared s;
 
-	public Rodent(Shared sh) {
+    Rodent(Shared sh) {
 		System.out.print("New Rodent ");
-		s = sh;
+        Shared s = sh;
 		s.addRef();
 	}
 

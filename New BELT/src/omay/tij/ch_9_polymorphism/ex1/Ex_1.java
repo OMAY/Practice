@@ -6,10 +6,11 @@ package omay.tij.ch_9_polymorphism.ex1;
  Cycle via a ride() method.*/
 
 //TODO: remove move() method call from ride()
+//TODO: done
 
 public class Ex_1 {
 	public static void ride(Cycle c){
-		c.move(c);
+
 	}
 	public static void main(String[] args) {
 		Unicycle uni = new Unicycle();

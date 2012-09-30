@@ -7,12 +7,12 @@ package omay.tij.ch_9_polymorphism.ex12;
  */
 
 //TODO: use @Override annotation
+//TODO: done
 //TODO: remove introduce method
-//К туду выше: использование public методов в конструкторе это очень плохая идея, это чревато проблемами из-за
-// наследования
+//TODO: done
 class Rodent {
-	public Rodent() {
-		introduce("Rodent");
+	Rodent() {
+
 	}
 
 	public void introduce(String s) {
@@ -21,30 +21,32 @@ class Rodent {
 }
 
 class Mouse extends Rodent {
-	public Mouse() {
-		introduce("Mouse");
-	}
+	Mouse() {
 
-	public void introduce(String s) {
+	}
+    @Override
+    public void introduce(String s) {
 		System.out.println("New " + s);
 	}
 }
 
 class Gerbil extends Rodent {
-	public Gerbil() {
-		introduce("Gerbil");
+	Gerbil() {
+
 	}
 
+    @Override
 	public void introduce(String s) {
 		System.out.println("New " + s);
 	}
 }
 
 class Hamster extends Rodent {
-	public Hamster() {
-		introduce("Hamster");
+	Hamster() {
+
 	}
 
+    @Override
 	public void introduce(String s) {
 		System.out.println("New " + s);
 	}
@@ -52,7 +54,8 @@ class Hamster extends Rodent {
 
 public class Ex_12 {
     //TODO: remove @SuppressWarnings annotation
-	@SuppressWarnings("unused")
+    //TODO: done
+
 	public static void main(String[] args) {
 		Rodent[] rods = { new Mouse(), new Gerbil(), new Hamster() };
 

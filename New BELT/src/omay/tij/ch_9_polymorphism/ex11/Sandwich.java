@@ -44,14 +44,15 @@ class PortableLunch extends Lunch {
 }
 
 //TODO: remove SuppressWarnings annotation
-@SuppressWarnings("unused")
+//TODO: done
+
 public class Sandwich extends PortableLunch {
 	private Bread b = new Bread();
 	private Cheese c = new Cheese();
 	private Lettuce L = new Lettuce();
 	private Pickle p = new Pickle();
 
-	public Sandwich() {
+	private Sandwich() {
 		System.out.println("Sandwich()");
 	}
 

@@ -1,6 +1,7 @@
 package omay.tij.ch_9_polymorphism.ex3.shape;
 
 //TODO: override print() method
+//TODO: done
 
 public class Triangle extends Shape {
 	@Override
@@ -12,4 +13,9 @@ public class Triangle extends Shape {
 	public void erase() {
 		System.out.println("Triangle.erase()");
 	}
+
+    @Override
+    public void print() {
+        System.out.println("This is a new Triangle");
+    }
 }

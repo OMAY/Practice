@@ -2,7 +2,8 @@ package omay.tij.ch_9_polymorphism.ex13;
 
 /*Add a finalize() method to ReferenceCounting.java to verify 
  * the termination condition (see the Initialization & Cleanup chapter). */
-class Shared {
+
+ class Shared {
 	private int refcount = 0;
 	private static long counter = 0;
 	private final long id = counter++;
@@ -15,20 +16,21 @@ class Shared {
 		refcount++;
 	}
 
-	protected void dispose() {
+	void dispose() {
 		if (--refcount == 0)
 			System.out.println("Disposing " + this);
 	}
 
+    @Override
 	protected void finalize() {
 		if (refcount > 0) {
 			System.out.println("ERROR! Object is using!");
 		} else {
 			System.out.println("finalize successfull");
-
 		}
 	}
 
+    @Override
 	public String toString() {
 		return "Shared " + id;
 	}
@@ -45,11 +47,12 @@ class Composing {
 		this.shared.addRef();
 	}
 
-	protected void dispose() {
+	void dispose() {
 		System.out.println("disposing " + this);
 		shared.dispose();
 	}
 
+    @Override
 	public String toString() {
 		return "Composing " + id;
 	}

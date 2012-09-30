@@ -6,6 +6,7 @@ import omay.tij.ch_9_polymorphism.ex4.shape.RandomShapeGenerator;
 import omay.tij.ch_9_polymorphism.ex4.shape.Shape;
 
 //TODO: use print() method
+//TODO: done
 
 public class Shapes {
 	private static RandomShapeGenerator gen = new RandomShapeGenerator();
@@ -16,6 +17,7 @@ public class Shapes {
 			s[i] = gen.next();
 		for (Shape shp : s) {
 			shp.draw();
+            shp.print();
 
 		}
 	}

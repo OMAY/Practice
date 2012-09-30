@@ -13,4 +13,9 @@ public class Square extends Shape {
 		System.out.println("Square.erase()");
 	}
 
+    @Override
+    public void print() {
+        System.out.println("This is a new Square");
+    }
+
 }

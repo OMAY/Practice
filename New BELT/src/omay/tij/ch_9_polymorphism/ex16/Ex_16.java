@@ -5,6 +5,7 @@ package omay.tij.ch_9_polymorphism.ex16;
  different states. Include methods to change the states.  */
 
 //TODO: use @Override annotation
+//TODO: done
 
 class AlertStatus {
 	public String alert() {
@@ -14,18 +15,24 @@ class AlertStatus {
 }
 
 class FirstStageAlert extends AlertStatus {
+
+    @Override
 	public String alert() {
 		return "FirstStageAlert";
 	}
 }
 
 class SecondStageAlert extends AlertStatus {
+
+    @Override
 	public String alert() {
 		return "SecondStageAlert";
 	}
 }
 
 class ThirdStageAlert extends AlertStatus {
+
+    @Override
 	public String alert() {
 		return "ThirdStageAlert";
 	}
