@@ -5,13 +5,14 @@ package omay.tij.ch_9_polymorphism.ex7;
 import omay.tij.ch_9_polymorphism.ex6.music.Note;
 
 //TODO: use proper access modifiers
+//TODO: done
 
 class Instrument {
-	void play(Note n) {
+	public void play(Note n) {
 		System.out.println("Instrument.play( )" + n);
 	}
 
-	void adjust() {
+	public void adjust() {
 		System.out.println("Adjusting Instrument");
 	}
 
@@ -25,7 +26,7 @@ class Instrument {
 class Wind extends Instrument {
 
     @Override
-	void play(Note n) {
+	public void play(Note n) {
 		System.out.println("Wind.play( )" + n);
 	}
 
@@ -35,14 +36,14 @@ class Wind extends Instrument {
 	}
 
     @Override
-	void adjust() {
+	public void adjust() {
 		System.out.println("Adjusting Wind");
 	}
 }
 
 class Percussion extends Instrument {
     @Override
-	void play(Note n) {
+	public void play(Note n) {
 		System.out.println("Percussion.play()" + n);
 	}
 
@@ -52,14 +53,14 @@ class Percussion extends Instrument {
 	}
 
     @Override
-	void adjust() {
+	public void adjust() {
 		System.out.println("Adjusting Percussion");
 	}
 }
 
 class Stringed extends Instrument {
     @Override
-	void play(Note n) {
+	public void play(Note n) {
 		System.out.println("Stringed.play( )" + n);
 	}
 
@@ -69,26 +70,26 @@ class Stringed extends Instrument {
 	}
 
     @Override
-	void adjust() {
+	public void adjust() {
 		System.out.println("Adjusting Stringed");
 	}
 }
 
 class Brass extends Wind {
     @Override
-	void play(Note n) {
+	public void play(Note n) {
 		System.out.println("Brass.play( )" + n);
 	}
 
     @Override
-	void adjust() {
+	public void adjust() {
 		System.out.println("Adjusting Brass");
 	}
 }
 
 class Woodwind extends Wind {
     @Override
-	void play(Note n) {
+	public void play(Note n) {
 		System.out.println("Woodwind.play( )" + n);
 	}
 
@@ -100,12 +101,12 @@ class Woodwind extends Wind {
 
 class Guitar extends Stringed {
     @Override
-	void play(Note n) {
+	public void play(Note n) {
 		System.out.println("Guitar.play( )" + n);
 	}
 
     @Override
-	void adjust() {
+	public void adjust() {
 		System.out.println("Adjusting Guitar");
 	}
 
@@ -122,18 +123,17 @@ public class Music3 {
 	}
 
     //TODO: use this method ( tuneAll(orchestra); )in main() instead of foreach construction
+    //TODO: done
 	public static void tuneAll(Instrument[] e) {
-		for (Instrument i : e)
+		for (Instrument i : e){
 			tune(i);
+        }
 	}
 
 	public static void main(String[] args) {
 		Instrument[] orchestra = { new Wind(), new Percussion(),
 				new Stringed(), new Brass(), new Woodwind(), new Guitar() };
-		for (Instrument i : orchestra) {
-			System.out.println(i);
-			tune(i);
-		}
+		tuneAll(orchestra);
 
 	}
 }

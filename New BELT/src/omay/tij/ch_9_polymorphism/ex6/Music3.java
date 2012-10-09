@@ -5,15 +5,16 @@ package omay.tij.ch_9_polymorphism.ex6;
  System.out.println ()(without any casting). */
 
 //TODO: use proper access modifiers
+//TODO: done
 
 import omay.tij.ch_9_polymorphism.ex6.music.Note;
 
 class Instrument {
-	void play(Note n) {
+	public void play(Note n) {
 		System.out.println("Instrument.play( )" + n);
 	}
 
-	void adjust() {
+	public void adjust() {
 		System.out.println("Adjusting Instrument");
 	}
 
@@ -25,7 +26,7 @@ class Instrument {
 
 class Wind extends Instrument {
 	@Override
-	void play(Note n) {
+	public void play(Note n) {
 		System.out.println("Wind.play( )" + n);
 	}
 
@@ -35,14 +36,14 @@ class Wind extends Instrument {
 	}
 
 	@Override
-	void adjust() {
+	public void adjust() {
 		System.out.println("Adjusting Wind");
 	}
 }
 
 class Percussion extends Instrument {
 	@Override
-	void play(Note n) {
+	public void play(Note n) {
 		System.out.println("Percussion.play()" + n);
 	}
 
@@ -52,14 +53,14 @@ class Percussion extends Instrument {
 	}
 
 	@Override
-	void adjust() {
+	public void adjust() {
 		System.out.println("Adjusting Percussion");
 	}
 }
 
 class Stringed extends Instrument {
 	@Override
-	void play(Note n) {
+	public void play(Note n) {
 		System.out.println("Stringed.play( )" + n);
 	}
 
@@ -69,26 +70,26 @@ class Stringed extends Instrument {
 	}
 
 	@Override
-	void adjust() {
+	public void adjust() {
 		System.out.println("Adjusting Stringed");
 	}
 }
 
 class Brass extends Wind {
 	@Override
-	void play(Note n) {
+	public void play(Note n) {
 		System.out.println("Brass.play( )" + n);
 	}
 
 	@Override
-	void adjust() {
+	public void adjust() {
 		System.out.println("Adjusting Brass");
 	}
 }
 
 class Woodwind extends Wind {
 	@Override
-	void play(Note n) {
+	public void play(Note n) {
 		System.out.println("Woodwind.play( )" + n);
 	}
 
