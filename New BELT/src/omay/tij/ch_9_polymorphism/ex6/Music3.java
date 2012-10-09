@@ -4,9 +4,6 @@ package omay.tij.ch_9_polymorphism.ex6;
  Object method toString(). Try printing the Instrument objects using 
  System.out.println ()(without any casting). */
 
-//TODO: use proper access modifiers
-//TODO: done
-
 import omay.tij.ch_9_polymorphism.ex6.music.Note;
 
 class Instrument {
@@ -117,6 +114,5 @@ public class Music3 {
 			System.out.println(i);
 			tune(i);
 		}
-
 	}
 }

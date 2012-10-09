@@ -7,9 +7,6 @@ Modify Music3.java so it randomly creates
 Instrument objects the way Shapes.java does.
 */
 
-//TODO: use proper access modifiers
-//TODO: done
-
 
 class Instrument {
 	public void play(Note n) {
@@ -123,8 +120,6 @@ public class Music3 {
 		i.play(Note.MIDDLE_C);
 	}
 
-    //TODO: use this method in main() instead of foreach construction
-    //TODO: done
 	public static void tuneAll(Instrument[] e) {
 		for (Instrument i : e)
 			tune(i);
@@ -137,6 +132,5 @@ public class Music3 {
 			orchestra[i] = gen.next();
 		}
 		tuneAll(orchestra);
-
 	}
 }
