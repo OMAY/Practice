@@ -63,6 +63,7 @@ class Mouse extends Rodent {
 
     @Override
     protected void dispose() {
+        super.dispose();
         nonSharedMember.dispose();
     }
 }
@@ -79,6 +80,7 @@ class Gerbil extends Rodent {
 
     @Override
     protected void dispose() {
+        super.dispose();
         nonSharedMember.dispose();
     }
 }
@@ -95,6 +97,7 @@ class Hamster extends Rodent {
 
     @Override
     protected void dispose() {
+        super.dispose();
         nonSharedMember.dispose();
     }
 }
