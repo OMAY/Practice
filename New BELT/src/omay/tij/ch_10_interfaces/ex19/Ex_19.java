@@ -25,7 +25,6 @@ class CoinTossing implements Toss {
         } else {
             System.out.println("tails.");
         }
-
     }
 }
 
@@ -40,7 +39,6 @@ class DiceTossing implements Toss {
 
     public void tossing() {
         System.out.print("Dice tossing is " + (rand.nextInt(6) + 1));
-
     }
 }
 

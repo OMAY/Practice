@@ -4,9 +4,6 @@ package omay.tij.ch_10_interfaces.ex8;
  called FastFood (with appropriate methods)and change Sandwich so that
  it also implements FastFood. */
 
-//TODO: use access modifiers
-//TODO: done
-
 class Bread {
 	public Bread() {
 		System.out.println("Bread()");

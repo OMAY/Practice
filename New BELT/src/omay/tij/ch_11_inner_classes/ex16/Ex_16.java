@@ -4,6 +4,8 @@ package omay.tij.ch_11_inner_classes.ex16;
 chapter to use anonymous innerclasses.
 */
 
+//TODO: 18-е в интерфейсах нужно переделать, поэтому и данное упражнение понадобится переделать по изменившемуся 18-му
+
 interface Cycle {
     void move();
 }
@@ -17,9 +19,10 @@ class Unicycle implements Cycle {
     public void move() {
         System.out.println("Unicycle moving");
     }
-    public static CycleUsing using = new CycleUsing(){
+
+    public static CycleUsing using = new CycleUsing() {
         @Override
-        public Cycle ride(){
+        public Cycle ride() {
             return new Unicycle();
         }
     };
@@ -30,9 +33,10 @@ class Bicycle implements Cycle {
     public void move() {
         System.out.println("Bicycle moving");
     }
-    public static CycleUsing using = new CycleUsing(){
+
+    public static CycleUsing using = new CycleUsing() {
         @Override
-        public Cycle ride(){
+        public Cycle ride() {
             return new Bicycle();
         }
     };
@@ -43,9 +47,10 @@ class Tricycle implements Cycle {
     public void move() {
         System.out.println("Tricycle moving");
     }
-    public static CycleUsing using = new CycleUsing(){
+
+    public static CycleUsing using = new CycleUsing() {
         @Override
-        public Cycle ride(){
+        public Cycle ride() {
             return new Tricycle();
         }
     };

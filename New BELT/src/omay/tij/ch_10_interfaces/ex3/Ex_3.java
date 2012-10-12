@@ -6,6 +6,7 @@ package omay.tij.ch_10_interfaces.ex3;
  definition of this variable, give it an on zero value.In the base-class
  constructor, call this method. In main(), create an object of the derived
  type, and then call its print() method.Explain the results. */
+
 abstract class BaseClass {
 	BaseClass() {
         print();

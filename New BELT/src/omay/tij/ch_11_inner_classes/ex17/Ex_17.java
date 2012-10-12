@@ -6,6 +6,12 @@ import java.util.Random;
 chapter to use anonymous inner classes.
 */
 
+//TODO: вот тут как раз есть пример фабрики, даже абстрактной, по этому поводу даже специфический анекдот есть:
+// You have a problem and decide to use Java.
+//Now you have a ProblemFactory, ProblemFactoryConfigurationManager and problem/factory/config/production.xml
+//TODO: по самому упражнению - нужно использовать анонимные внутренние классы (реализующие интерфейс),
+// а не обычные классы-реализации интерфейса, т.е new Toss { @Override public void tossing() { ...
+
 interface Toss {
     void tossing();
 }
@@ -16,6 +22,7 @@ interface TossFactory {
 
 class CoinTossing implements Toss {
     private Random rand = new Random();
+
     @Override
     public void tossing() {
         int i = rand.nextInt(2);
@@ -27,27 +34,30 @@ class CoinTossing implements Toss {
         }
 
     }
-    public static TossFactory factory = new TossFactory(){
+
+    public static TossFactory factory = new TossFactory() {
         @Override
         public Toss getTossing() {
             return new CoinTossing();
         }
-    } ;
+    };
 }
 
 class DiceTossing implements Toss {
     private Random rand = new Random();
+
     @Override
     public void tossing() {
         System.out.print("Dice tossing is " + (rand.nextInt(6) + 1));
 
     }
+
     public static TossFactory factory = new TossFactory() {
         @Override
         public Toss getTossing() {
             return new DiceTossing();
         }
-    } ;
+    };
 
 }
 

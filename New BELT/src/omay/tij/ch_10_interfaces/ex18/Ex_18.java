@@ -5,13 +5,13 @@ Unicycle, Bicycle and Tricycle. Create factories for each type of Cycle,
 and code that uses these factories.
 */
 
+//TODO: а тут фабрики нужны по условию :) фабрика это порождающий шаблон проектирования
+//полагаю в книге был пример, но если что на википедии есть описание
+
 interface Cycle {
     void move();
 }
 
-//TODO: factory в имени интерфейса как-то не вяжется с тем что он делает, фабрики служат для создания объектов
-//в следующем упражнении в этом плане ошибки нет
-//TODO: done.?
 interface CycleUsing {
     Cycle ride();
 }
