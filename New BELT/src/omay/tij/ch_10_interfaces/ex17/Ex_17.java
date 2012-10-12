@@ -11,7 +11,6 @@ class J implements I {
     public J() {
         System.out.println("J-constructor");
         //i = 9; // - ERROR cannot assign a value to a static variable
-        //TODO: всё-таки final, а не static, эта тудушка тоже для удаления после прочтения
     }
 }
 

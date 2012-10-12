@@ -1,12 +1,13 @@
 package omay.tij.ch_10_interfaces.ex5.pack;
 
 //TODO: use access modifiers explicitly
+//TODO: done
 
 public interface ThreeMethods {
-	void firstMethod();
+	public void firstMethod();
 
-	void secondMethod();
+	public void secondMethod();
 
-	void thirdMethod();
+	public void thirdMethod();
 
 }

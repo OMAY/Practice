@@ -5,27 +5,28 @@ package omay.tij.ch_10_interfaces.ex8;
  it also implements FastFood. */
 
 //TODO: use access modifiers
+//TODO: done
 
 class Bread {
-	Bread() {
+	public Bread() {
 		System.out.println("Bread()");
 	}
 }
 
 class Cheese {
-	Cheese() {
+	public Cheese() {
 		System.out.println("Cheese()");
 	}
 }
 
 class Lettuce {
-	Lettuce() {
+	public Lettuce() {
 		System.out.println("Lettuce()");
 	}
 }
 
 class Pickle {
-	Pickle() {
+	public Pickle() {
 		System.out.println("Pickle()");
 	}
 }
@@ -35,6 +36,7 @@ interface FastFood {
 }
 
 public class Sandwich implements FastFood {
+    @Override
 	public void newOne() {
 		new Bread();
 		new Cheese();

@@ -8,14 +8,7 @@ package omay.tij.ch_10_interfaces.ex3;
  type, and then call its print() method.Explain the results. */
 abstract class BaseClass {
 	BaseClass() {
-        //TODO: этот вызов должен быть по условию, но, как я говорил ранее, вызов не приватных методов в конструкторе
-        //это потенциально опасная идея, после прочтения и эту тудушку нужно удалить
-        //пользуясь случаем задам вопрос: в каком порядке выполняется инициализация класса при вызове конструктора
-        //класса-потомка т.е. есть: конструкторы в обоих классах, блоки инициализации в обоих классах, статические блоки
-        //инициализации в разных классах, инициализация полей в обоих классах, при выполнении программы выполняется
-        //создание объекта класса-потомка, расположи в порядке вызова все перечисленные выше элементы, ответ лучше
-        //напиши на почту, комментарии в исходниках это не лучший способ ведения переписки.
-		print();
+        print();
 	}
 
 	public abstract void print();
@@ -27,7 +20,7 @@ class DerivedClass extends BaseClass {
 	DerivedClass() {
 		print();
 	}
-
+    @Override
 	public void print() {
 		System.out.println(i);
 	}
@@ -43,13 +36,3 @@ public class Ex_3 {
 	}
 
 }
-/*
- * Output: 
- * < 
- * 0 
- * 8 
- * 8 
- * > the first zeros prints by calling constructor of the base
- * class after creating reference of derived class, the first 8 called by
- * constructor of derived class the last 8 called by b.print().
- */

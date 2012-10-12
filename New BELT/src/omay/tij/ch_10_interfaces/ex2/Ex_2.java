@@ -10,9 +10,6 @@ abstract class AClass {
 public class Ex_2 {
 	public static void main(String[] args) {
 		// AClass a = new AClass();
-        //todo: и тем не менее можно сделать так:
-        //если бы у класса были бы абстрактные методы, мы должны были бы тут их реализовать
-        //после прочтения это туду нужно удалить, это просто небольшое пояснение материала.
         AClass a = new AClass() {
         };
 	}

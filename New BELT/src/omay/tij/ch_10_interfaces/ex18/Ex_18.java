@@ -11,17 +11,20 @@ interface Cycle {
 
 //TODO: factory в имени интерфейса как-то не вяжется с тем что он делает, фабрики служат для создания объектов
 //в следующем упражнении в этом плане ошибки нет
-interface CycleFactory {
+//TODO: done.?
+interface CycleUsing {
     Cycle ride();
 }
 
 class Unicycle implements Cycle {
+    @Override
     public void move() {
         System.out.println("Unicycle moving");
     }
 }
 
-class UnicycleFactory implements CycleFactory {
+class UnicycleUsing implements CycleUsing {
+    @Override
     public Cycle ride() {
         return new Unicycle();
 
@@ -29,38 +32,42 @@ class UnicycleFactory implements CycleFactory {
 }
 
 class Bicycle implements Cycle {
+    @Override
     public void move() {
         System.out.println("Bicycle moving");
     }
 }
 
-class BicycleFactory implements CycleFactory {
+class BicycleUsing implements CycleUsing {
+    @Override
     public Cycle ride() {
         return new Bicycle();
     }
 }
 
 class Tricycle implements Cycle {
+    @Override
     public void move() {
         System.out.println("Tricycle moving");
     }
 }
 
-class TricycleFactory implements CycleFactory {
+class TricycleUsing implements CycleUsing {
+    @Override
     public Cycle ride() {
         return new Tricycle();
     }
 }
 
 public class Ex_18 {
-    public static void ridding(CycleFactory cycleFactory) {
-        Cycle c = cycleFactory.ride();
+    public static void ridding(CycleUsing cycleUsing) {
+        Cycle c = cycleUsing.ride();
         c.move();
     }
 
     public static void main(String[] args) {
-        ridding(new UnicycleFactory());
-        ridding(new BicycleFactory());
-        ridding(new TricycleFactory());
+        ridding(new UnicycleUsing());
+        ridding(new BicycleUsing());
+        ridding(new TricycleUsing());
     }
 }
