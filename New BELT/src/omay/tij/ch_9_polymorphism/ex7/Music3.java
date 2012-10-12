@@ -4,9 +4,6 @@ package omay.tij.ch_9_polymorphism.ex7;
  * verify that polymorphism works for your new type. */
 import omay.tij.ch_9_polymorphism.ex6.music.Note;
 
-//TODO: use proper access modifiers
-//TODO: done
-
 class Instrument {
 	public void play(Note n) {
 		System.out.println("Instrument.play( )" + n);
@@ -122,8 +119,6 @@ public class Music3 {
 		i.play(Note.MIDDLE_C);
 	}
 
-    //TODO: use this method ( tuneAll(orchestra); )in main() instead of foreach construction
-    //TODO: done
 	public static void tuneAll(Instrument[] e) {
 		for (Instrument i : e){
 			tune(i);
@@ -134,6 +129,5 @@ public class Music3 {
 		Instrument[] orchestra = { new Wind(), new Percussion(),
 				new Stringed(), new Brass(), new Woodwind(), new Guitar() };
 		tuneAll(orchestra);
-
 	}
 }
