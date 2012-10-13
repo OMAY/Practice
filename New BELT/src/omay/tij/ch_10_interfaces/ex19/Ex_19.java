@@ -16,7 +16,7 @@ interface TossFactory {
 
 class CoinTossing implements Toss {
     private Random rand = new Random();
-
+    @Override
     public void tossing() {
         int i = rand.nextInt(2);
         System.out.print("Coin tossing is ");
@@ -29,6 +29,7 @@ class CoinTossing implements Toss {
 }
 
 class CoinTossingFactory implements TossFactory {
+    @Override
     public Toss getTossing() {
         return new CoinTossing();
     }
@@ -36,13 +37,14 @@ class CoinTossingFactory implements TossFactory {
 
 class DiceTossing implements Toss {
     private Random rand = new Random();
-
+    @Override
     public void tossing() {
         System.out.print("Dice tossing is " + (rand.nextInt(6) + 1));
     }
 }
 
 class DiceTossingFactory implements TossFactory {
+    @Override
     public Toss getTossing() {
         return new DiceTossing();
     }

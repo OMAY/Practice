@@ -7,12 +7,13 @@ and code that uses these factories.
 
 //TODO: а тут фабрики нужны по условию :) фабрика это порождающий шаблон проектирования
 //полагаю в книге был пример, но если что на википедии есть описание
+//TODO: вроде done.?
 
 interface Cycle {
     void move();
 }
 
-interface CycleUsing {
+interface CycleUsingFactory {
     Cycle ride();
 }
 
@@ -23,7 +24,7 @@ class Unicycle implements Cycle {
     }
 }
 
-class UnicycleUsing implements CycleUsing {
+class UnicycleUsing implements CycleUsingFactory {
     @Override
     public Cycle ride() {
         return new Unicycle();
@@ -38,7 +39,7 @@ class Bicycle implements Cycle {
     }
 }
 
-class BicycleUsing implements CycleUsing {
+class BicycleUsing implements CycleUsingFactory {
     @Override
     public Cycle ride() {
         return new Bicycle();
@@ -52,7 +53,7 @@ class Tricycle implements Cycle {
     }
 }
 
-class TricycleUsing implements CycleUsing {
+class TricycleUsing implements CycleUsingFactory {
     @Override
     public Cycle ride() {
         return new Tricycle();
@@ -60,8 +61,8 @@ class TricycleUsing implements CycleUsing {
 }
 
 public class Ex_18 {
-    public static void ridding(CycleUsing cycleUsing) {
-        Cycle c = cycleUsing.ride();
+    public static void ridding(CycleUsingFactory factory) {
+        Cycle c = factory.ride();
         c.move();
     }
 

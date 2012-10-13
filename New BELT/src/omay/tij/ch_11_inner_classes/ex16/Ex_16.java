@@ -1,11 +1,11 @@
 package omay.tij.ch_11_inner_classes.ex16;
 
 /*Modify the solution to Exercise18 from the Interfaces
-chapter to use anonymous innerclasses.
+chapter to use anonymous inner classes.
 */
 
 //TODO: 18-е в интерфейсах нужно переделать, поэтому и данное упражнение понадобится переделать по изменившемуся 18-му
-
+//TODO: done.
 interface Cycle {
     void move();
 }
@@ -14,44 +14,44 @@ interface CycleUsing {
     Cycle ride();
 }
 
-class Unicycle implements Cycle {
-    @Override
-    public void move() {
-        System.out.println("Unicycle moving");
-    }
-
+abstract class Unicycle implements Cycle {
     public static CycleUsing using = new CycleUsing() {
         @Override
         public Cycle ride() {
-            return new Unicycle();
+            return new Unicycle(){
+                @Override
+                public void move() {
+                    System.out.println("Unicycle moving");
+                }
+            };
         }
     };
 }
 
-class Bicycle implements Cycle {
-    @Override
-    public void move() {
-        System.out.println("Bicycle moving");
-    }
-
+abstract class Bicycle implements Cycle {
     public static CycleUsing using = new CycleUsing() {
         @Override
         public Cycle ride() {
-            return new Bicycle();
+            return new Bicycle(){
+                @Override
+                public void move() {
+                    System.out.println("Bicycle moving");
+                }
+            };
         }
     };
 }
 
-class Tricycle implements Cycle {
-    @Override
-    public void move() {
-        System.out.println("Tricycle moving");
-    }
-
+abstract class Tricycle implements Cycle {
     public static CycleUsing using = new CycleUsing() {
         @Override
         public Cycle ride() {
-            return new Tricycle();
+            return new Tricycle(){
+                @Override
+                public void move() {
+                    System.out.println("Tricycle moving");
+                }
+            };
         }
     };
 }
