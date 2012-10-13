@@ -9,13 +9,11 @@ chapter to use anonymous inner classes.
 interface Cycle {
     void move();
 }
-
-interface CycleUsing {
+interface CycleFactory {
     Cycle ride();
 }
-
 abstract class Unicycle implements Cycle {
-    public static CycleUsing using = new CycleUsing() {
+    public static CycleFactory factory = new CycleFactory() {
         @Override
         public Cycle ride() {
             return new Unicycle(){
@@ -27,9 +25,8 @@ abstract class Unicycle implements Cycle {
         }
     };
 }
-
 abstract class Bicycle implements Cycle {
-    public static CycleUsing using = new CycleUsing() {
+    public static CycleFactory factory = new CycleFactory() {
         @Override
         public Cycle ride() {
             return new Bicycle(){
@@ -41,9 +38,8 @@ abstract class Bicycle implements Cycle {
         }
     };
 }
-
 abstract class Tricycle implements Cycle {
-    public static CycleUsing using = new CycleUsing() {
+    public static CycleFactory factory = new CycleFactory() {
         @Override
         public Cycle ride() {
             return new Tricycle(){
@@ -55,17 +51,16 @@ abstract class Tricycle implements Cycle {
         }
     };
 }
-
 public class Ex_16 {
-    public static void ridding(CycleUsing cycleUsing) {
-        Cycle c = cycleUsing.ride();
+    public static void ridding(CycleFactory cycleFactory) {
+        Cycle c = cycleFactory.ride();
         c.move();
     }
 
     public static void main(String[] args) {
-        ridding(Unicycle.using);
-        ridding(Bicycle.using);
-        ridding(Tricycle.using);
+        ridding(Unicycle.factory);
+        ridding(Bicycle.factory);
+        ridding(Tricycle.factory);
     }
 }
 

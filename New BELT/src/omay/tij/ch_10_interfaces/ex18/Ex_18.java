@@ -16,7 +16,7 @@ interface Cycle {
     void move();
 }
 
-interface CycleUsingFactory {
+interface CycleFactory {
     Cycle ride();
 }
 
@@ -27,7 +27,7 @@ class Unicycle implements Cycle {
     }
 }
 
-class UnicycleUsing implements CycleUsingFactory {
+class UnicycleFactory implements CycleFactory {
     @Override
     public Cycle ride() {
         return new Unicycle();
@@ -42,7 +42,7 @@ class Bicycle implements Cycle {
     }
 }
 
-class BicycleUsing implements CycleUsingFactory {
+class BicycleFactory implements CycleFactory {
     @Override
     public Cycle ride() {
         return new Bicycle();
@@ -56,7 +56,7 @@ class Tricycle implements Cycle {
     }
 }
 
-class TricycleUsing implements CycleUsingFactory {
+class TricycleFactory implements CycleFactory {
     @Override
     public Cycle ride() {
         return new Tricycle();
@@ -64,14 +64,14 @@ class TricycleUsing implements CycleUsingFactory {
 }
 
 public class Ex_18 {
-    public static void ridding(CycleUsingFactory factory) {
+    public static void ridding(CycleFactory factory) {
         Cycle c = factory.ride();
         c.move();
     }
 
     public static void main(String[] args) {
-        ridding(new UnicycleUsing());
-        ridding(new BicycleUsing());
-        ridding(new TricycleUsing());
+        ridding(new UnicycleFactory());
+        ridding(new BicycleFactory());
+        ridding(new TricycleFactory());
     }
 }
