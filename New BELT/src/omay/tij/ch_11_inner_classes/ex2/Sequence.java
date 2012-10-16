@@ -4,6 +4,8 @@ package omay.tij.ch_11_inner_classes.ex2;
  method that displays this String. Add several instances of your new class to a
 Sequence object, then display them. */
 
+//todo: ок
+
 interface Selector {
     boolean end();
 

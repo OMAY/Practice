@@ -5,6 +5,8 @@ named Inner. Add a method to Outer that returns an object of type Inner .
 In main(), create and initialize a reference to an Inner .
  */
 
+//TODO: отлично
+
 public class Outer {
     class Inner {
         Inner() {

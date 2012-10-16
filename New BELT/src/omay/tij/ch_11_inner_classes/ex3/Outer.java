@@ -5,6 +5,8 @@ field (initialized by the constructor), and Inner has a toString() that
 displays this field. Create an object of type Inner and display it.
 */
 
+//todo: отлично
+
 public class Outer {
     private String s;
 

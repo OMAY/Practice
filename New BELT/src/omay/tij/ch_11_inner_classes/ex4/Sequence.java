@@ -4,6 +4,8 @@ package omay.tij.ch_11_inner_classes.ex4;
 that produces the reference to the outer class Sequence .
 */
 
+//TODO: ок
+
 interface Selector {
     boolean end();
 

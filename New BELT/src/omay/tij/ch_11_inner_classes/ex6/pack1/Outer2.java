@@ -15,4 +15,8 @@ public class Outer2 extends Outer {
         in2.print();
 
     }
+    //todo: можно так (если конструктор public)
+    public Interface get() {
+        return new Inner();
+    }
 }
