@@ -2,6 +2,8 @@ package omay.tij.ch_11_inner_classes.ex11;
 
 import omay.tij.ch_11_inner_classes.ex9.Inter;
 
+//TODO: ок, но зачем два аналогичных метода?
+
 public class Outer11 {
     private class Inner implements Inter {
         public void print() {

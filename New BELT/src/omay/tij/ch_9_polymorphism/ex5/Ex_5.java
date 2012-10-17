@@ -1,7 +1,7 @@
 package omay.tij.ch_9_polymorphism.ex5;
 
 /*Starting from Exercise1, add a wheels() method in 
- Cycle, which returns the number of wheels. Modify ride() to call wheels() 
+ Cycle, which returns the number of wheels. Modify makeCycle() to call wheels()
  and verify that polymorphism works.*/
 
 public class Ex_5 {

@@ -6,6 +6,8 @@ second class that has a method that returns a reference to an object of the
 first class. Create the object that you return by making an anonymous inner
 class that inherits from the first class. */
 
+//TODO: хорошо
+
 class Class1 {
     public Class1(int i) {
         printMe(i);
@@ -18,13 +20,8 @@ class Class1 {
 
 class Class2 {
     public Class1 create1(int i) {
-        //TODO: тут не хватало фигурных скобок, т.к. без них ты просто создавал экземпляр Class1, а с ними - экземпляр
-        //анонимного класса, советую найти в папке с проектом байткод (.class), тогда ты увидишь что для анонимных
-        //классов тоже создаются свои файлы с байткодом и у них (анонимных классов) на самом деле есть имена, правда
-        //обращаться по этим именам нет смысла.
-        //TODO: это которые Class2$1 и Class2$2   ?
-        //TODO: да, по коду - всё ок, можно убирать тудушку
-        return new Class1(i) {};
+        return new Class1(i) {
+        };
     }
 
     public Class1 create2(int i) {

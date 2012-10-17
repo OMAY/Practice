@@ -1,11 +1,8 @@
 package omay.tij.ch_11_inner_classes.ex16;
 
 /*Modify the solution to Exercise18 from the Interfaces
-chapter to use anonymous inner classes.
-*/
+chapter to use anonymous inner classes.*/
 
-//TODO: 18-е в интерфейсах нужно переделать, поэтому и данное упражнение понадобится переделать по изменившемуся 18-му
-//TODO: done.
 //TODO: тоже нужно поправить имена, в плане анонимный внутренних классов мне тоже не совсем нравится:
 //чтобы оправдать использование внутренних классов, можно сделать так: интерфейс для сущности,
 //и фабрики (не абстрактные, абстрактные классы могут использовать только когда в них могут быть абстрактные методы либо
@@ -37,18 +34,21 @@ class SomethingBadFactory {
     }
 }*/
 
+//TODO: подправил 18-е из 10-й главы, можно ориентироваться на него и код выше/ниже
 
 interface Cycle {
     void move();
 }
+
 interface CycleFactory {
     Cycle ride();
 }
+
 abstract class Unicycle implements Cycle {
     public static CycleFactory factory = new CycleFactory() {
         @Override
         public Cycle ride() {
-            return new Unicycle(){
+            return new Unicycle() {
                 @Override
                 public void move() {
                     System.out.println("Unicycle moving");
@@ -57,11 +57,12 @@ abstract class Unicycle implements Cycle {
         }
     };
 }
+
 abstract class Bicycle implements Cycle {
     public static CycleFactory factory = new CycleFactory() {
         @Override
         public Cycle ride() {
-            return new Bicycle(){
+            return new Bicycle() {
                 @Override
                 public void move() {
                     System.out.println("Bicycle moving");
@@ -70,11 +71,12 @@ abstract class Bicycle implements Cycle {
         }
     };
 }
+
 abstract class Tricycle implements Cycle {
     public static CycleFactory factory = new CycleFactory() {
         @Override
         public Cycle ride() {
-            return new Tricycle(){
+            return new Tricycle() {
                 @Override
                 public void move() {
                     System.out.println("Tricycle moving");
@@ -83,6 +85,7 @@ abstract class Tricycle implements Cycle {
         }
     };
 }
+
 public class Ex_16 {
     public static void ridding(CycleFactory cycleFactory) {
         Cycle c = cycleFactory.ride();

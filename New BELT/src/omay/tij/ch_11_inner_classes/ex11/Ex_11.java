@@ -1,10 +1,9 @@
 package omay.tij.ch_11_inner_classes.ex11;
+
 /*Create a private inner class that implements a public
 interface. Write a method that returns a reference to an instance of the
 private inner class, upcast to the interface. Show that the inner class is
-completely hidden by trying to downcast to it.
-
-*/
+completely hidden by trying to downcast to it.*/
 
 import omay.tij.ch_11_inner_classes.ex9.Inter;
 
